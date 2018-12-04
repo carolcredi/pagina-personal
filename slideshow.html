@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+        <header>
+                <a href="index.html"><img class="logohead" width= "30px" src="logo.png"></a>
+                <div class="contenedor">
+                    <nav class="menu">
+                        <a href="index.html">Inicio</a>
+                        <a href="fotografias.html">Galeria</a>
+                        <a href="slideshow.html">Portafolio</a>
+                        <a href="animaciones.html">Animaciones</a>
+                        <a href="contacto.html">Contacto</a>
+                        <a href="cv/micv.pdf">CV</a>
+                    </nav>
+                    <div class="contenido-header">
+                        <h1 class="titulo-header">Carol Credi</h1>
+                        <span class="linea-header"></span>
+                        <h2 class="texto-header">Drops of creativity<span class="desaparecer"> by multimedia design</span></h2>
+                        
+                    </div>
+                </div>
+            </header>
+            
+    <div style="text-align: center;" class="slide-contenedor">
+        <div class="miSlider fade">
+            <img src="folleto.png" alt="">
+            
+        </div>
+        <div class="miSlider fade">
+            <img src="kinnis.png" alt="">
+        </div>
+        <div class="miSlider fade">
+            <img src="sari.png" alt="">
+        </div>
+        <div class="direcciones">
+            <a href="#" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+            <a href="#" class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+        </div>
+        <div class="barras">
+            <span class="barra active" onclick="posicionSlide(1)"></span>
+            <span class="barra" onclick="posicionSlide(2)"></span>
+            <span class="barra" onclick="posicionSlide(3)"></span>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+    <footer>
+            <section class="contacto">
+                    <div class="contenedor">
+                        <div class="footer-textos">
+                            <h2>Contacta con nosostros</h2>
+                            <p>Drops of creativity.</p>
+                        </div>
+                        <form action="" class="formulario" method="POST">
+                            <input type="text" placeholder="Nombre" id="nombre" name="nombre" required value="">
+                            <input type="email" placeholder="Correo" id="correo" name="correo" required value="" class="email">
+                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje:"></textarea>
+                           <div class="derecha">
+                            <input class="boton derecha" type="submit" value="Contactar" name="submmit">
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            <p> © Copyright 2018 | Carol Credi</p>
+    </footer>
+</body>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129111563-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-129111563-1');
+</script>
+</html>
